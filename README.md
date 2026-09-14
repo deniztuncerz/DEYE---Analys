@@ -1,72 +1,115 @@
+<div align="center">
+
 # DEYE / Analys
 
-**Hibrit inverter izleme, tanı ve teknik servis çalışma alanı.**  
-**A workspace for hybrid inverter monitoring, diagnostics and technical service.**
+**Hibrit inverterler için izleme, analiz ve teknik servis**
 
-[Türkçe](#türkçe) · [English](#english)
+Canlı veriden servis raporuna, tek çalışma alanı.
 
-## Türkçe
+**Türkçe** · [English](README.en.md)
 
-DEYE / Analys; canlı enerji verilerini, cihaz parametrelerini, servis testlerini ve oturum kayıtlarını aynı arayüzde toplar. Tezgâh ve saha çalışmalarında cihaz davranışını incelemek, ölçümleri kaydetmek ve servis raporu oluşturmak için geliştirilir.
+[Canlı grafikler](#canlı-grafikler) · [Parametreler](#parametre-yönetimi) · [Testler](#fonksiyon-testleri) · [Raporlama](#oturum-geçmişi-ve-raporlar)
 
-| Alan | Özellikler |
-| --- | --- |
-| İZLEME | PV, yük, batarya ve şebeke güç kartları; Batarya doluluk oranı ve çalışma durumu; Doğrulanmış ve beklenen akış yönlerinin ayrımı |
-| ANALİZ | 1, 5, 15 ve 30 dakika veya tüm oturum; Özel sinyal seçimi, duraklatma ve otomatik ölçek; Kaynak geçişlerinde güç eğilimlerinin karşılaştırılması |
-| ÖLÇÜMLER | L1, L2 ve L3 gerilimleri; Faz başına yük gücü; Batarya, DC ve AC sıcaklıkları |
-| TANI | Aktif hata ve uyarı sayıları; Kalıcı olay kayıtları; Arıza anındaki ölçümlerle teknik değerlendirme |
-| AYARLAR | Şarj/deşarj akımı ve batarya kapasitesi; Düşük, kapanma ve yeniden başlama SOC eşikleri; Batarya, çalışma, şebeke ve jeneratör ayar grupları |
-| ZAMAN PLANI | Altı ayrı zaman periyodu; Periyot bazında güç ve SOC değerleri; Kapalı, şebeke, jeneratör veya birlikte şarj kaynağı |
-| SERVİS ERİŞİMİ | Süreli servis erişimi; Değişikliklerin toplu incelemesi ve ikinci onay; Yazma sonrası geri okuma ve doğrulama akışı |
-| SERVİS TESTLERİ | Doğrulanmış fan testi komutu; Jeneratör rölesi ve ekran testleri için doğrulama durumu; Lityum arayüzü, LCD tuşları ve röle izleme tanı kartları |
-| FONKSİYON TESTLERİ | PV üretim, PV→yük ve PV→batarya senaryoları; Şebeke→batarya, batarya→yük ve şebeke→yük senaryoları; PV→şebeke satış ve sıfır ihracat kontrolleri; faz dengesi ve hatasız çalışma senaryoları; sonuç durumlarının ayrımı |
-| KAYIT VE RAPOR | Manuel ölçüm, birim ve teknisyen notu; Oturum süresi, örnek sayısı, hata ve test özeti; Müşteri Excel’i, servis test raporu ve kapsamlı servis telemetrisi |
+</div>
 
-### Tanıtım sayfası
+![DEYE / Analys — Enerji akışı ve genel bakış](assets/screenshots/a33122c0-2229-41b1-b772-d710b74f24a0.jpeg)
 
-`index.html`, Türkçe / English dil düğmeli, mobil uyumlu tanıtım sayfasıdır. Dil tercihi tarayıcıda saklanır. Ekran görüntüleri tıklanarak büyütülebilir; görsellerin içindeki orijinal arayüz metinleri çevrilmez.
+DEYE / Analys; PV üretimini, batarya durumunu, şebeke alışverişini ve yük tüketimini aynı ekranda toplar. Teknik servis ekipleri ve test mühendisleri için **cihaz davranışını izleme, ayarları inceleme, fonksiyonları test etme ve sonuçları raporlama** sürecini birleştirir.
 
-Bu depo yalnızca tanıtım sayfasını ve tanıtım materyallerini içerir. İnverter uygulamasının kaynak kodu, haberleşme implementasyonu, servis PIN'i ve çalıştırılabilir uygulaması dahil değildir.
-
-**Mevcut durum:** Sayfa ve iki dilde içerik hazırlanmıştır. Gönderilen toplam 13 ekran görüntüsünün içerikleri ve sayfa eşleştirmeleri tamamlanmıştır. 13 JPEG dosyası GitHub'a yüklenmiş ve sayfa bağlantılarıyla eşleştirilmiştir. Bu commit ile canlı site yayına alınmamıştır.
-
-Görsel dosya eşleştirmeleri: [Ekran görüntüsü listesi](assets/screenshots/README.md).
-
-### Destek kapsamı
-
-İçerik, paylaşılan TommaTech TRIO HYBRID LV 20.0F ekranlarına dayanır. Parametre yazma ve servis komutları cihaz modeli, firmware, profil ve doğrulama durumuna bağlıdır. Örnek servis ekranında fan testi doğrulanmıştır; diğer kartlar aynı doğrulama durumunda değildir. Fonksiyon testleri ekrandaki ön koşullar ve ölçümlerle değerlendirilir.
-
-## English
-
-DEYE / Analys combines live energy data, device parameters, service tests and session records in one interface. It supports bench and field workflows for inspecting device behavior, recording measurements and preparing service reports.
-
-| Area | Features |
-| --- | --- |
-| MONITORING | PV, load, battery and grid power cards; Battery state of charge and operating status; Distinct confirmed and pending flow directions |
-| ANALYSIS | 1, 5, 15 and 30 minutes or the full session; Custom signal selection, pause and automatic scaling; Power trend comparison during source transitions |
-| MEASUREMENTS | L1, L2 and L3 voltages; Per-phase load power; Battery, DC and AC temperatures |
-| DIAGNOSTICS | Active fault and warning counts; Persistent event records; Technical assessment with fault-time measurements |
-| SETTINGS | Charge/discharge current and battery capacity; Low, shutdown and restart SOC thresholds; Battery, operating, grid and generator setting groups |
-| SCHEDULING | Six individual time periods; Power and SOC values per period; Off, grid, generator or combined charging source |
-| SERVICE ACCESS | Time-limited service access; Change review and second confirmation; Post-write readback and verification workflow |
-| SERVICE TESTS | Verified fan test command; Verification status for generator relay and display tests; Diagnostic cards for lithium interface, LCD keys and relay monitoring |
-| FUNCTION TESTS | PV generation, PV-to-load and PV-to-battery scenarios; Grid-to-battery, battery-to-load and grid-to-load scenarios; PV export and zero-export checks; phase balance and fault-free operation scenarios; distinct result states |
-| RECORDS AND REPORTS | Manual measurements, units and technician notes; Session duration, sample count, faults and test summary; Customer Excel, service test report and comprehensive service telemetry |
-
-### Product showcase
-
-`index.html` is a responsive showcase with Turkish / English buttons and a saved language preference. Uploaded screenshots can be enlarged; original interface text inside screenshots is not translated.
-
-This repository contains presentation materials only. It does not include the inverter application's source code, communication implementation, service PIN or application executable.
-
-**Current status:** The page and bilingual content are committed. Content and page mappings for all 13 supplied screenshots are complete. All 13 JPEG files are uploaded and matched to the page references. This commit does not deploy a live website.
-
-See the [screenshot manifest](assets/screenshots/README.md).
-
-### Support scope
-
-Content is based on the supplied TommaTech TRIO HYBRID LV 20.0F screenshots. Parameter writing and service commands depend on device model, firmware, profile and verification status. The sample service screen shows a verified fan test; other cards do not have the same verification status. Function tests are evaluated against on-screen preconditions and measurements.
+**Canlı izleme** &nbsp; · &nbsp; **Kontrollü ayar yönetimi** &nbsp; · &nbsp; **Servis testleri** &nbsp; · &nbsp; **Oturum raporları**
 
 ---
 
-Proje geliştirme / Project development: **Deniz Türker Tuncer**
+## Enerji akışı ve genel bakış
+
+PV, batarya, şebeke ve yük arasındaki enerji hareketini güç kartları ve akış görünümüyle takip edin. Batarya doluluğu, bağlantı durumu, aktif alarmlar ve servis özeti aynı çalışma alanındadır.
+
+<details>
+<summary>Diğer çalışma görünümünü aç</summary>
+
+![DEYE / Analys — Alternatif çalışma görünümü](assets/screenshots/25ccd26e-72e4-4b0c-bcbc-3393c729fe17.jpeg)
+
+</details>
+
+## Canlı grafikler
+
+Güç değişimlerini ortak zaman ekseninde karşılaştırın. PV/DC, batarya, şebeke/AC, yük, jeneratör ve sıcaklık profilleri; zaman aralığı seçimi, duraklatma ve otomatik ölçekle incelenebilir.
+
+![DEYE / Analys — Canlı grafikler](assets/screenshots/f1198f5b-47c3-4f52-af63-81f415f6a8d2.jpeg)
+
+## Faz ve sıcaklık ölçümleri
+
+L1, L2 ve L3 gerilimlerini, faz başına yük gücünü ve batarya/DC/AC sıcaklıklarını birlikte değerlendirin. Toplam gücün yanında faz dağılımını ve termal çalışma koşullarını görün.
+
+![DEYE / Analys — Faz ve sıcaklık ölçümleri](assets/screenshots/a603989f-8d19-450b-ac2d-77372469afbb.jpeg)
+
+## Alarmlar ve olay geçmişi
+
+Aktif hata ve uyarıları kalıcı olay kayıtlarıyla takip edin. Arıza anındaki güç, sıcaklık, BMS ve röle verileri, sorunu çalışma koşullarıyla birlikte incelemeye yardımcı olur.
+
+![DEYE / Analys — Alarmlar ve olay geçmişi](assets/screenshots/99741456-a055-4223-a262-fae7bdb47464.jpeg)
+
+## Parametre yönetimi
+
+Batarya kapasitesi, şarj/deşarj akımları ve SOC eşikleri gibi ayarları cihaz profiline göre yönetin. Değişiklikleri uygulamadan önce karşılaştırın; onay ve geri okuma adımlarıyla kontrol edin.
+
+![DEYE / Analys — Batarya ve cihaz parametreleri](assets/screenshots/d557f949-390d-46b7-ab6d-283725bc8246.jpeg)
+
+<details>
+<summary>Servis kilidi ve salt okunur görünüm</summary>
+
+![DEYE / Analys — Servis erişimi ve salt okunur görünüm](assets/screenshots/f34f74b6-8d70-461d-9395-9fd4a53a4bde.jpeg)
+
+</details>
+
+## Şarj zaman planı
+
+Altı zaman periyodu için başlangıç saati, güç, hedef SOC ve şarj kaynağını düzenleyin. Şebeke ve jeneratör seçenekleriyle şarj planını çalışma ihtiyacına uyarlayın.
+
+![DEYE / Analys — Şarj zaman planı](assets/screenshots/39590195-6c96-4737-85bf-6f09ebd323d6.jpeg)
+
+## Servis testleri
+
+Fan, jeneratör rölesi ve ekran/LED/buzzer testlerini; lityum arayüzü, LCD tuşları ve röle izleme kartlarıyla birlikte inceleyin. Her kart cihaz doğrulama durumunu gösterir; örnek ekranda fan testi doğrulanmıştır.
+
+![DEYE / Analys — Servis testleri](assets/screenshots/0187af27-c171-4ace-9fbd-195aba420668.jpeg)
+
+## Fonksiyon testleri
+
+PV üretimi, batarya şarjı, yük beslemesi, şebekeye satış, sıfır ihracat, faz dengesi ve hatasız çalışma senaryolarını takip edin. Test ön koşulları ve sonuçları ayrı gösterilir; başarılı, yapılmadı ve koşullar sağlanmadı durumları kolayca ayırt edilir.
+
+![DEYE / Analys — Fonksiyon testleri ve sonuçları](assets/screenshots/9bc5e791-f926-4709-a950-b2df3f6ba735.jpeg)
+
+<details>
+<summary>Test sırasında koşul takibini görüntüle</summary>
+
+![DEYE / Analys — Test sırasında koşul takibi](assets/screenshots/0bf274d9-4b7f-4258-a71f-8583457f2bd1.jpeg)
+
+</details>
+
+## Servis oturumu ve manuel ölçüm
+
+Teknisyen ve cihaz bilgilerini, tezgâh ölçümlerini ve notları aynı servis kaydında toplayın. Oturum süresi, örnek sayısı, hata ve test özetleri kayıt boyunca izlenir.
+
+![DEYE / Analys — Servis oturumu ve manuel ölçüm](assets/screenshots/1b1d84f9-1d78-4899-893b-430eda2ca72e.jpeg)
+
+## Oturum geçmişi ve raporlar
+
+Tamamlanan oturumları sonuçlarıyla inceleyin. Müşteri Excel’i, servis test raporu ve kapsamlı servis telemetrisi çıktılarıyla teknik çalışmayı paylaşılabilir kayıtlara dönüştürün.
+
+![DEYE / Analys — Oturum geçmişi ve raporlar](assets/screenshots/4d04a5d3-a82c-41c5-8e55-697ba01f1625.jpeg)
+
+---
+
+### Kimler için?
+
+**Teknik servis ekipleri** için arıza inceleme ve kayıt; **test mühendisleri** için ölçüm ve fonksiyon kontrolü; **saha ekipleri** için cihaz davranışı ve ayar değerlendirmesi.
+
+<sub>Gösterilen cihaz: TommaTech TRIO HYBRID LV 20.0F. Kullanılabilir ayarlar ve testler cihaz modeli, firmware ve profil doğrulamasına bağlıdır.</sub>
+
+<div align="center">
+
+**Deniz Türker Tuncer** · Mekatronik Mühendisi  
+[Geliştirici profili](https://github.com/deniztuncerz) · [English overview](README.en.md)
+
+</div>
