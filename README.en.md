@@ -113,3 +113,14 @@ Review completed sessions and their outcomes. Customer Excel, service test repor
 [Developer profile](https://github.com/deniztuncerz) · [Türkçe tanıtım](README.md)
 
 </div>
+
+---
+
+#### Models in the compatibility catalog
+
+- <sub>**Deye SG05LP3:** SUN-3/4/5/6/8/10/12/14/15/16/18/20K-SG05LP3-EU-SM2</sub>
+- <sub>**Deye SG04LP3:** SUN-5/6/8/10/12K-SG04LP3-EU</sub>
+- <sub>**TommaTech:** TRIO HYBRID LV 14.0F / 15.0F / 16.0F / 18.0F / 20.0F</sub>
+- <sub>**TommaTech:** Trio-Hybrid 12.0K 48V F</sub>
+
+<sub>The list covers models under compatibility assessment; available functions depend on device and firmware validation.</sub>
