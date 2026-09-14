@@ -24,11 +24,11 @@ DEYE / Analys; canlı enerji verilerini, cihaz parametrelerini, servis testlerin
 
 ### Tanıtım sayfası
 
-`index.html`, Türkçe / English dil düğmeli, mobil uyumlu tanıtım sayfasıdır. Dil tercihi tarayıcıda saklanır. Ekran görüntüleri yüklendiğinde tıklanarak büyütülebilir; görsellerin içindeki orijinal arayüz metinleri çevrilmez.
+`index.html`, Türkçe / English dil düğmeli, mobil uyumlu tanıtım sayfasıdır. Dil tercihi tarayıcıda saklanır. Ekran görüntüleri tıklanarak büyütülebilir; görsellerin içindeki orijinal arayüz metinleri çevrilmez.
 
 Bu depo yalnızca tanıtım sayfasını ve tanıtım materyallerini içerir. İnverter uygulamasının kaynak kodu, haberleşme implementasyonu, servis PIN'i ve çalıştırılabilir uygulaması dahil değildir.
 
-**Mevcut durum:** Sayfa ve iki dilde içerik hazırlanmıştır. Gönderilen toplam 13 ekran görüntüsünün içerikleri ve sayfa eşleştirmeleri tamamlanmıştır. JPEG dosyalarının GitHub'a aktarımı beklenmektedir. Bu commit ile canlı site yayına alınmamıştır.
+**Mevcut durum:** Sayfa ve iki dilde içerik hazırlanmıştır. Gönderilen toplam 13 ekran görüntüsünün içerikleri ve sayfa eşleştirmeleri tamamlanmıştır. 13 JPEG dosyası GitHub'a yüklenmiş ve sayfa bağlantılarıyla eşleştirilmiştir. Bu commit ile canlı site yayına alınmamıştır.
 
 Görsel dosya eşleştirmeleri: [Ekran görüntüsü listesi](assets/screenshots/README.md).
 
@@ -59,7 +59,7 @@ DEYE / Analys combines live energy data, device parameters, service tests and se
 
 This repository contains presentation materials only. It does not include the inverter application's source code, communication implementation, service PIN or application executable.
 
-**Current status:** The page and bilingual content are committed. Content and page mappings for all 13 supplied screenshots are complete. Uploading the JPEG image files to GitHub remains outstanding. This commit does not deploy a live website.
+**Current status:** The page and bilingual content are committed. Content and page mappings for all 13 supplied screenshots are complete. All 13 JPEG files are uploaded and matched to the page references. This commit does not deploy a live website.
 
 See the [screenshot manifest](assets/screenshots/README.md).
 
