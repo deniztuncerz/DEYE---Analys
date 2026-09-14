@@ -113,3 +113,14 @@ Tamamlanan oturumları sonuçlarıyla inceleyin. Müşteri Excel’i, servis tes
 [Geliştirici profili](https://github.com/deniztuncerz) · [English overview](README.en.md)
 
 </div>
+
+---
+
+#### Uyumluluk kataloğundaki modeller
+
+- <sub>**Deye SG05LP3:** SUN-3/4/5/6/8/10/12/14/15/16/18/20K-SG05LP3-EU-SM2</sub>
+- <sub>**Deye SG04LP3:** SUN-5/6/8/10/12K-SG04LP3-EU</sub>
+- <sub>**TommaTech:** TRIO HYBRID LV 14.0F / 15.0F / 16.0F / 18.0F / 20.0F</sub>
+- <sub>**TommaTech:** Trio-Hybrid 12.0K 48V F</sub>
+
+<sub>Liste, uyumluluğu değerlendirilen modelleri kapsar; kullanılabilir işlevler cihaz ve firmware doğrulamasına bağlıdır.</sub>
