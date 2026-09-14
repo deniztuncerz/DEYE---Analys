@@ -19,6 +19,14 @@ Upload the original JPEG files to this directory with the names below. The page 
 | `0bf274d9-4b7f-4258-a71f-8583457f2bd1.jpeg` | 09 / FONKSİYON TESTLERİ / 09 / FUNCTION TESTS |
 | `1b1d84f9-1d78-4899-893b-430eda2ca72e.jpeg` | 10 / KAYIT VE RAPOR / 10 / RECORDS AND REPORTS |
 
-Üç ek ekran görüntüsü geldiğinde ilgili özellikler ve görsel eşleştirmeleri güncellenecek.
+## Ek ekranlar / Additional screens
 
-Three additional screenshots are pending from the user.
+| Dosya / File | Bölüm / Section |
+| --- | --- |
+| `a33122c0-2229-41b1-b772-d710b74f24a0.jpeg` | PV üretimi sırasında enerji görünümü / Energy overview during PV generation |
+| `9bc5e791-f926-4709-a950-b2df3f6ba735.jpeg` | Fonksiyon testleri ve sonuç durumları / Function tests and result states |
+| `4d04a5d3-a82c-41c5-8e55-697ba01f1625.jpeg` | Tamamlanan servis oturumları ve raporlar / Completed service sessions and reports |
+
+Toplam 13 görselin eşleştirmesi tamamlandı. JPEG dosyaları henüz bu depoya aktarılmadı.
+
+All 13 screenshots are mapped. The JPEG image files have not yet been uploaded to this repository.
